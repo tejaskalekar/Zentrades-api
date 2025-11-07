@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: zentrades-proxy
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn main:app
+    plan: free
